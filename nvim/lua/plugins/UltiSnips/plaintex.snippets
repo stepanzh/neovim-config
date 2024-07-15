@@ -1,0 +1,44 @@
+extends tex
+
+snippet comblock "comment block" A
+%%%
+%%% $1
+%%%
+endsnippet
+
+snippet beg "begin{} / end{}" bA
+\begin{$1}
+	$0
+$2\end{$1}
+endsnippet
+
+snippet im "Inline math" A
+$$1$$0
+endsnippet
+
+snippet dm "Display math"
+\[
+	$1
+.\]
+$0
+endsnippet
+
+snippet tbf "\textbf{}" wA
+\textbf{$1}$0
+endsnippet
+
+snippet mbf "\mathbf{}" wA
+\mathbf{$1}$0
+endsnippet
+
+snippet ts "subscript" iA
+_{$1}$0
+endsnippet
+
+snippet td "supscript" iA
+^{$1}$0
+endsnippet
+
+snippet // "\frac{}{}" iA
+\\frac{$1}{$2}$0
+endsnippet
