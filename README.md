@@ -1,6 +1,6 @@
 # neovim-config
 
-My config for neovim text editor.
+My config for [neovim](https://neovim.io/) text editor.
 
 Usage
 
