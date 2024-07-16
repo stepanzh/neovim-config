@@ -5,6 +5,9 @@ I usually work with Julia, Python, C and LaTeX.
 
 My config is inspired by [Josean Martinez' YouTube video](https://www.youtube.com/watch?v=vdn_pKJUda8) and [Gilles Castel's post on snippets](https://castel.dev/post/lecture-notes-1/).
 
+| Light theme | Dark theme |
+:--:|:--:|
+|<img src='https://github.com/stepanzh/neovim-config/blob/main/assets/screenshot-light-theme.png' width=512 alt='light theme preview'>|<img src='https://github.com/stepanzh/neovim-config/blob/main/assets/screenshot-dark-theme.png' width=512 alt='dark theme preview'>|
 
 ## How to install
 
