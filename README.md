@@ -10,7 +10,7 @@ My config is inspired by [Josean Martinez' YouTube video](https://www.youtube.co
 
 - LaTeX snippets based on [Gilles Castel's post](https://castel.dev/post/lecture-notes-1/).
 - LaTeX to Unicode completion based on [julia-vim](https://github.com/JuliaEditorSupport/julia-vim), e.g. `C \leftarrow<Tab> \alpha<Tab> A B + \beta<Tab>` becomes `C ← α A B + β C`.
-  By default, activated by `<space>uc`, active by default in Julia files.
+  Activated by `<space>uc`; active by default in Julia files.
 - Toggle between light and dark themes for readability during screen sharing by `:ToggleAppearance`.
 
 | Light theme | Dark theme |
