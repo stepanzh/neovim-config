@@ -1,17 +1,12 @@
 extends tex
 
-snippet comblock "comment block" A
-%%%
-%%% $1
-%%%
-endsnippet
 
-snippet sec "Section with comment block"
-%%%
-%%% $2
-%%%
-\\$1{$2}
-$0
+# Environments
+
+snippet beq "begin{equation} / end{equation}" bA
+\begin{equation}
+	$0
+$2\end{equation}
 endsnippet
 
 snippet beg "begin{} / end{}" bA
@@ -31,8 +26,15 @@ snippet dm "Display math"
 $0
 endsnippet
 
+
+# Symbol variations, bold, calligraphic etc.
+
 snippet mbf "\mathbf{}" wA
 \mathbf{$1}$0
+endsnippet
+
+snippet bsy "\boldsymbol{}" wA
+\boldsymbol{$1}$0
 endsnippet
 
 snippet tbf "\textbf{}" wA
@@ -43,6 +45,9 @@ snippet mcal "\mathcal{}" wA
 \mathcal{$1}$0
 endsnippet
 
+
+# Scripts
+
 snippet ts "subscript" iA
 _{$1}$0
 endsnippet
@@ -51,9 +56,8 @@ snippet td "supscript" iA
 ^{$1}$0
 endsnippet
 
-snippet // "\frac{}{}" iA
-\\frac{$1}{$2}$0
-endsnippet
+
+# Brackets
 
 snippet lr( "\left(  \right)" iA
 \left( $1 \right)$0
@@ -61,4 +65,25 @@ endsnippet
 
 snippet lr[ "\left[  \right]" iA
 \left[ $1 \right]$0
+endsnippet
+
+
+# Other
+
+snippet // "\frac{}{}" iA
+\\frac{$1}{$2}$0
+endsnippet
+
+snippet comblock "comment block" A
+%%%
+%%% $1
+%%%
+endsnippet
+
+snippet sec "Section with comment block"
+%%%
+%%% $2
+%%%
+\\$1{$2}
+$0
 endsnippet
