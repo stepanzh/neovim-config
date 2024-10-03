@@ -41,11 +41,14 @@ keymap.set('n', '<leader>km', ':w<CR>:make<CR>')
 
 
 -- LaTeX to Unicode input
--- Toggles latex to unicode completion, e.g. \alpha<Tab> becomes α
+-- 
+-- Toggles latex to unicode completion, e.g. \alpha<Tab> becomes α.
+-- Uses julia-vim-L2U (part of julia-vim plugin).
+--
 -- Mnemonic: Unicode
 --           ^  ^
--- Required: julia-vim -> julia-vim-L2U
 -- TODO: Check that julia-vim is installed.
+-- NOTE: See :help julia-vim-L2U for another behavior of completion.
 -- NOTE: Maybe there is a better keymap, as u and c vim defaults for Redo and Change mode.
 keymap.set('n', '<leader>uc', ':call LaTeXtoUnicode#Toggle()<CR>')
 keymap.set('n', '<leader>uc', ':call LaTeXtoUnicode#Toggle()<CR>')
