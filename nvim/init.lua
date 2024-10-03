@@ -1,5 +1,3 @@
-print('Config in test')
-
 -- After removing old (brewed) python3 this command is necessary.
 -- On the right is symlink to actual python3.
 vim.g.python3_host_prog = '/usr/local/bin/python3'
