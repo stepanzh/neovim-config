@@ -26,3 +26,13 @@ keymap.set('n', '<leader>se', '<C-w>=')       -- Make split equal sized (there i
 -- Call make on mk or km
 keymap.set('n', '<leader>mk', ':w<CR>:make<CR>')
 keymap.set('n', '<leader>km', ':w<CR>:make<CR>')
+
+-- LaTeX to Unicode input
+-- Toggles latex to unicode completion, e.g. \alpha<Tab> becomes α
+-- Mnemonic: Unicode
+--           ^  ^
+-- Required: julia-vim -> julia-vim-L2U
+-- TODO: Check that julia-vim is installed.
+-- NOTE: Maybe there is a better keymap, as u and c vim defaults for Redo and Change mode.
+keymap.set('n', '<leader>uc', ':call LaTeXtoUnicode#Toggle()<CR>')
+keymap.set('n', '<leader>uc', ':call LaTeXtoUnicode#Toggle()<CR>')
